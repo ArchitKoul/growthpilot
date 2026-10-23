@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --surface-2: #f2f2ef;
+  --border: #e4e4e0;
+  --text: #16161a;
+  --text-2: #55545e;
+  --muted: #8a8994;
+  --accent: #2a78d6;
+  --accent-soft: #e8f1fc;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --good: #0f7a4c;
+  --good-soft: #e6f4ec;
+  --warn: #9a6200;
+  --warn-soft: #fdf3dc;
+  --bad: #b42323;
+  --bad-soft: #fbe9e9;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--border);
+  --color-ink: var(--text);
+  --color-ink-2: var(--text-2);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-good: var(--good);
+  --color-good-soft: var(--good-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "tnum" 1;
+}
+
+.recharts-cartesian-grid line { stroke: var(--border); }
+.recharts-text { fill: var(--muted); font-size: 11px; }
